@@ -1,5 +1,11 @@
 import {Entity, model, property} from '@loopback/repository';
 
+enum userRoll {
+  Admin = 'Admin',
+  SuperAdmin = 'SuperAdmin',
+  Subscriber = 'Subscriber'
+}
+
 @model()
 export class Users extends Entity {
   @property({
@@ -30,6 +36,16 @@ export class Users extends Entity {
     type: 'number',
   })
   phoneno?: number;
+
+  @property({
+    type: 'string',
+    required: true,
+    jsonSchema: {
+      enum: Object.values(userRoll),
+    },
+  })
+  roll: string;
+  userRoll: userRoll;
 
 
   constructor(data?: Partial<Users>) {

@@ -1,11 +1,13 @@
 {
   "ids": {
-    "Users": 4
+    "Users": 6
   },
   "models": {
     "Users": {
       "1": "{\"name\":\"updateuser\",\"lastname\":\"test1\",\"email\":\"test@gamil.com\",\"phoneno\":1234567891,\"id\":1}",
-      "3": "{\"name\":\"user3\",\"lastname\":\"test3\",\"email\":\"test3@gmail.com\",\"phoneno\":998767564,\"id\":3}"
+      "3": "{\"name\":\"user3\",\"lastname\":\"test3\",\"email\":\"test3@gmail.com\",\"phoneno\":998767564,\"id\":3}",
+      "4": "{\"name\":\"test\",\"lastname\":\"data\",\"email\":\"data@gmail.com\",\"phoneno\":998989898989,\"roll\":\"data\",\"id\":4}",
+      "5": "{\"name\":\"string\",\"lastname\":\"string\",\"email\":\"string\",\"phoneno\":0,\"roll\":\"SuperAdmin\",\"id\":5}"
     }
   }
 }

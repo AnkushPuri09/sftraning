@@ -2,19 +2,6 @@
 
 import {DefaultSequence, RequestContext} from '@loopback/rest';
 require('dotenv').config();
-// export class MySequence extends MiddlewareSequence {
-//   log(msg: string) {
-//     console.log(msg);
-//   }
-//   async handle(context: RequestContext) {
-//     const {request, response} = context;
-//     console.log('request data:--->', request.socket.remoteAddress);
-//     // console.log('request data:--->', request);
-//     this.log('before request');
-//     await super.handle(context);
-//     this.log('after request');
-//   }
-// }
 export class MySequence extends DefaultSequence {
   async handle(context: RequestContext) {
     try {
